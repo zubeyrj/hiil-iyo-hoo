@@ -7,7 +7,8 @@
 <meta name="description" content="Get in touch with Hiil iyo Hoo — volunteer, partner, ask about a donation, or reach our Mogadishu and Minneapolis offices directly.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@300;400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
 <div class="topbar">
   <div class="container">
     <div class="topbar-contacts">
-      <a href="tel:+16125550142">+1 (612) 555-0142</a>
+      <a href="tel:+252615550199">+252 61 555 0199</a>
       <a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a>
       <span>Mogadishu, Somalia · Minneapolis, USA</span>
     </div>
@@ -27,75 +28,69 @@
   </div>
 </div>
 
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="logo">Hiil<span>iyo</span>Hoo<small>Support &amp; Provision</small></a>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Our Programs</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-      <div class="header-cta">
-        <a href="donate.html" class="btn btn-primary btn-sm">Donate Now</a>
-      </div>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<section class="page-header">
-  <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
-    <h1>Our Contact Info</h1>
-    <p>Volunteer, partner, or ask a question — we'll get back to you within two business days.</p>
-  </div>
+<section class="page-hero no-heading">
+  <div class="photo-tex ph-h" style="position:absolute;inset:0;"></div>
+  <header class="site-header on-photo">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M24 33c-6.5-4.4-11-8.6-11-13.3A6 6 0 0124 16.4 6 6 0 0135 19.7c0 4.7-4.5 8.9-11 13.3z" fill="currentColor"/></svg>
+        <span class="logo-words"><strong>Hiil Iyo</strong>Hoo</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Work</a></li>
+          <li><a href="programs.html">Donations</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="header-icons">
+          <a href="donate.html" class="txt-link txt-link--white">Donate Now</a>
+          <button class="icon-dots" data-offcanvas-open aria-label="Open menu"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="contact-grid">
+    <div class="contact-wrap">
       <div>
-        <div class="office-card">
-          <h4>Mogadishu Office</h4>
-          <div class="row"><span class="ico">☎</span><span>+252 61 555 0199</span></div>
-          <div class="row"><span class="ico">✉</span><span>mogadishu@hiiliyohoo.org</span></div>
-          <div class="row"><span class="ico">⚲</span><span>Wadada Taleex, Mogadishu, Somalia</span></div>
+        <div class="section-head">
+          <h2 class="lavender-heading" style="font-size:clamp(2.6rem,6vw,4.4rem);">Our Contact Info</h2>
+          <p>Whether you want to volunteer, partner, or ask where your donation goes — our teams in Somalia and the diaspora are ready to answer.</p>
         </div>
-        <div class="office-card">
-          <h4>Minneapolis Office</h4>
-          <div class="row"><span class="ico">☎</span><span>+1 (612) 555-0142</span></div>
-          <div class="row"><span class="ico">✉</span><span>usa@hiiliyohoo.org</span></div>
-          <div class="row"><span class="ico">⚲</span><span>2100 Riverside Ave, Minneapolis, MN, USA</span></div>
-        </div>
-        <p class="form-note">Office details above are placeholders — replace with your real registered addresses, phone lines, and emails before launch.</p>
-      </div>
-
-      <div>
-        <h4>Send us a message</h4>
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact">
-          <div class="form-grid">
-            <div class="form-field"><label for="cfname">First Name *</label><input id="cfname" name="first_name" type="text" required></div>
-            <div class="form-field"><label for="clname">Last Name</label><input id="clname" name="last_name" type="text"></div>
-            <div class="form-field full"><label for="cemail">Email Address *</label><input id="cemail" name="email" type="email" required></div>
-            <div class="form-field full">
-              <label for="csubject">I'm reaching out about</label>
-              <select id="csubject" name="subject">
-                <option>Volunteering</option>
-                <option>Donating</option>
-                <option>Partnership</option>
-                <option>Media / Press</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-field full"><label for="cmessage">Message *</label><textarea id="cmessage" name="message" rows="5" required></textarea></div>
+        <div class="offices">
+          <div class="office">
+            <h4>Mogadishu</h4>
+            <p>+252 61 555 0199</p>
+            <p>mogadishu@hiiliyohoo.org</p>
+            <p>Wadada Taleex,<br>Mogadishu, Somalia</p>
           </div>
-          <button type="submit" class="btn btn-primary" style="margin-top:18px;">Submit</button>
-          <p class="form-note">This form uses Netlify Forms syntax and will work automatically if deployed on Netlify. On other hosts, connect a service like Formspree and update the form's action/attributes.</p>
-        </form>
+          <div class="office">
+            <h4>Minneapolis</h4>
+            <p>+1 (612) 555-0142</p>
+            <p>usa@hiiliyohoo.org</p>
+            <p>2100 Riverside Ave,<br>Minneapolis, USA</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" data-netlify="true" name="contact" method="POST">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="field"><label for="cname">Name</label><input id="cname" type="text" name="name"></div>
+        <div class="field"><label for="cemail">E-mail</label><input id="cemail" type="email" name="email"></div>
+        <div class="field"><label for="cmessage">Message</label><textarea id="cmessage" name="message" rows="5"></textarea></div>
+        <button type="submit" class="txt-link">Submit</button>
+        <p style="font-size:0.85rem;color:#888;margin-top:20px;">This form uses Netlify Forms syntax and works automatically if deployed on Netlify. On another host, connect a service like Formspree.</p>
+      </form>
+    </div>
+    <div class="map-embed photo-tex ph-d" style="display:flex;align-items:center;justify-content:center;">
+      <div style="text-align:center;color:#fff;">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" style="margin:0 auto 10px;"><path d="M12 22s7-7.4 7-12.5A7 7 0 005 9.5C5 14.6 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+        <div style="font-family:var(--font-display);text-transform:uppercase;letter-spacing:0.04em;">Mogadishu &amp; Minneapolis</div>
+        <p style="margin-top:8px;max-width:360px;color:#f0e8e2;">Map placeholder — swap in a real embed (Google Maps, Mapbox) once your office addresses are finalized.</p>
       </div>
     </div>
   </div>
@@ -103,43 +98,45 @@
 
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M24 33c-6.5-4.4-11-8.6-11-13.3A6 6 0 0124 16.4 6 6 0 0135 19.7c0 4.7-4.5 8.9-11 13.3z" fill="currentColor"/></svg>
+      <strong>Hiil iyo Hoo</strong>
+    </div>
     <div class="footer-top">
       <div class="footer-col">
-        <div class="footer-logo">Hiil<span>iyo</span>Hoo</div>
-        <p>Support and provision, together. Hiil iyo Hoo stands beside Somali families with both solidarity and material aid, at home and across the diaspora.</p>
-      </div>
-      <div class="footer-col">
         <h4>Our Info</h4>
-        <div class="row"><span class="ico">☎</span><a href="tel:+252615550199">+252 61 555 0199</a></div>
-        <div class="row"><span class="ico">☎</span><a href="tel:+16125550142">+1 (612) 555-0142</a></div>
-        <div class="row"><span class="ico">✉</span><a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a></div>
-        <div class="row"><span class="ico">⚲</span><span>Mogadishu, Somalia</span></div>
+        <div><a href="tel:+252615550199">+252 61 555 0199</a></div>
+        <div><a href="tel:+16125550142">+1 (612) 555-0142</a></div>
+        <div><a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a></div>
+        <div>Wadada Taleex,<br>Mogadishu, Somalia</div>
       </div>
       <div class="footer-col">
         <h4>Latest News</h4>
-        <div class="footer-news-item"><div class="meta">Oct 2026 · Relief</div><h6>Food convoy reaches 1,200 households in Baidoa</h6></div>
-        <div class="footer-news-item"><div class="meta">Sep 2026 · Water</div><h6>Borehole rehabilitation completed in Afgooye</h6></div>
-        <div class="footer-news-item"><div class="meta">Sep 2026 · Diaspora</div><h6>Minneapolis ururin raises $42,000</h6></div>
+        <div class="footer-news-item"><div class="meta">Oct 12, 2026 / <a href="programs.html">Relief</a></div><h6>Food Convoy Reaches Baidoa</h6></div>
+        <div class="footer-news-item"><div class="meta">Sep 14, 2026 / <a href="programs.html">Water</a></div><h6>Afgooye Well Back In Service</h6></div>
+        <div class="footer-news-item"><div class="meta">Aug 30, 2026 / <a href="programs.html">Diaspora</a></div><h6>Minneapolis Ururin Raises $42,000</h6></div>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
-        <div class="row"><a href="about.html">About Us</a></div>
-        <div class="row"><a href="programs.html">Our Programs</a></div>
-        <div class="row"><a href="events.html">Events</a></div>
-        <div class="row"><a href="donate.html">Donate</a></div>
-        <div class="row"><a href="contact.html">Contact</a></div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Hiil iyo Hoo. All rights reserved.</span>
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Twitter / X">X</a>
-        <a href="#" aria-label="Instagram">IG</a>
+        <h4>About Us</h4>
+        <p>Change a life with one gift. Hiil iyo Hoo is always here for Somali families who need both support and provision.</p>
+        <p>© 2026 Hiil iyo Hoo.</p>
       </div>
     </div>
   </div>
 </footer>
+
+<div class="offcanvas-overlay" data-offcanvas-close></div>
+<aside class="offcanvas-panel">
+  <button class="offcanvas-close" data-offcanvas-close>&#10005; Close</button>
+  <h3>Hello!</h3>
+  <p>Hiil iyo Hoo stands beside Somali families with both solidarity and material aid, at home and across the diaspora.</p>
+  <h4>Our Info</h4>
+  <p>+252 61 555 0199<br>info@hiiliyohoo.org<br>Mogadishu, Somalia</p>
+  <h4>Follow Us</h4>
+  <div class="offcanvas-social">
+    <a href="#" class="txt-link">FB</a><a href="#" class="txt-link">X</a><a href="#" class="txt-link">IG</a>
+  </div>
+</aside>
 
 <script src="assets/js/main.js"></script>
 </body>

@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Programs — Hiil iyo Hoo</title>
+<title>Donation List — Hiil iyo Hoo</title>
 <meta name="description" content="Browse the active relief, water, health, education, and livelihood programs run by Hiil iyo Hoo, and choose a cause to support.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@300;400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
 <div class="topbar">
   <div class="container">
     <div class="topbar-contacts">
-      <a href="tel:+16125550142">+1 (612) 555-0142</a>
+      <a href="tel:+252615550199">+252 61 555 0199</a>
       <a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a>
       <span>Mogadishu, Somalia · Minneapolis, USA</span>
     </div>
@@ -29,145 +30,136 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo">Hiil<span>iyo</span>Hoo<small>Support &amp; Provision</small></a>
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M24 33c-6.5-4.4-11-8.6-11-13.3A6 6 0 0124 16.4 6 6 0 0135 19.7c0 4.7-4.5 8.9-11 13.3z" fill="currentColor"/></svg>
+      <span class="logo-words"><strong>Hiil Iyo</strong>Hoo</span>
+    </a>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html" class="active">Our Programs</a></li>
+        <li><a href="about.html">Our Work</a></li>
+        <li><a href="programs.html" class="active">Donations</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="header-cta">
-        <a href="donate.html" class="btn btn-primary btn-sm">Donate Now</a>
+      <div class="header-icons">
+        <a href="donate.html" class="txt-link">Donate Now</a>
+        <button class="icon-dots" data-offcanvas-open aria-label="Open menu"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></button>
       </div>
     </nav>
     <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="page-header">
+<div class="page-header-simple">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a> / Our Programs</div>
-    <h1>Our Programs</h1>
-    <p>Six active causes, one promise: hiil iyo hoo.</p>
+    <h1>Donation List</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Donation List</div>
   </div>
-</section>
+</div>
 
-<section class="section">
+<section class="section--tight">
   <div class="container">
-    <div class="cause-grid">
+    <div class="causes-grid" style="row-gap:70px;">
       <article class="cause-card">
-        <div class="cause-media ph-1 ph-pattern"><span class="cause-tag">Emergency Relief</span></div>
-        <div class="cause-body">
-          <h5>Drought &amp; Famine Relief</h5>
-          <p>Emergency food baskets and cash assistance for families facing failed harvests across the Shabelle and Juba regions.</p>
-          <div class="progress-bar"><span style="width:68%"></span></div>
-          <div class="progress-meta"><span><strong>$61,200</strong> raised</span><span>of $90,000</span></div>
-          <a href="donate.html" class="btn btn-outline btn-sm" style="margin-top:10px;align-self:flex-start;">Give to This Cause</a>
-        </div>
+        <div class="cause-media photo-tex ph-e"><span class="cause-pill">Emergency Relief</span></div>
+        <h5>Drought &amp; Famine Relief</h5>
+        <p>Emergency food baskets and cash assistance for families facing failed harvests across the Shabelle and Juba regions.</p>
+        <div class="cause-pct">68%</div>
+        <div class="cause-bar"><span style="width:68%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$61,200</strong></span><span>Goal: <strong>$90,000</strong></span></div>
+        <a href="donate.html" class="txt-link">Donate Now</a>
       </article>
       <article class="cause-card">
-        <div class="cause-media ph-2 ph-pattern"><span class="cause-tag">Water &amp; Health</span></div>
-        <div class="cause-body">
-          <h5>Clean Water &amp; Sanitation</h5>
-          <p>Rehabilitating community wells and distributing water filters to reduce cholera and diarrheal disease outbreaks.</p>
-          <div class="progress-bar"><span style="width:45%"></span></div>
-          <div class="progress-meta"><span><strong>$27,500</strong> raised</span><span>of $60,000</span></div>
-          <a href="donate.html" class="btn btn-outline btn-sm" style="margin-top:10px;align-self:flex-start;">Give to This Cause</a>
-        </div>
+        <div class="cause-media photo-tex ph-g"><span class="cause-pill">Water &amp; Health</span></div>
+        <h5>Clean Water &amp; Sanitation</h5>
+        <p>Rehabilitating community wells and distributing water filters to reduce cholera and diarrheal disease outbreaks.</p>
+        <div class="cause-pct">45%</div>
+        <div class="cause-bar"><span style="width:45%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$27,500</strong></span><span>Goal: <strong>$60,000</strong></span></div>
+        <a href="donate.html" class="txt-link">Donate Now</a>
       </article>
       <article class="cause-card">
-        <div class="cause-media ph-3 ph-pattern"><span class="cause-tag">Education</span></div>
-        <div class="cause-body">
-          <h5>Education for Displaced Children</h5>
-          <p>School fees, uniforms, and temporary classrooms for children living in IDP camps around Baidoa and Mogadishu.</p>
-          <div class="progress-bar"><span style="width:52%"></span></div>
-          <div class="progress-meta"><span><strong>$20,800</strong> raised</span><span>of $40,000</span></div>
-          <a href="donate.html" class="btn btn-outline btn-sm" style="margin-top:10px;align-self:flex-start;">Give to This Cause</a>
-        </div>
+        <div class="cause-media photo-tex ph-h"><span class="cause-pill">Education</span></div>
+        <h5>Education for Displaced Children</h5>
+        <p>School fees, uniforms, and temporary classrooms for children living in IDP camps around Baidoa and Mogadishu.</p>
+        <div class="cause-pct">52%</div>
+        <div class="cause-bar"><span style="width:52%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$20,800</strong></span><span>Goal: <strong>$40,000</strong></span></div>
+        <a href="donate.html" class="txt-link">Donate Now</a>
       </article>
       <article class="cause-card">
-        <div class="cause-media ph-5 ph-pattern"><span class="cause-tag">Health</span></div>
-        <div class="cause-body">
-          <h5>Emergency Medical Aid</h5>
-          <p>Mobile clinics and medicine supplies reaching families who have no nearby hospital or health post.</p>
-          <div class="progress-bar"><span style="width:74%"></span></div>
-          <div class="progress-meta"><span><strong>$44,400</strong> raised</span><span>of $60,000</span></div>
-          <a href="donate.html" class="btn btn-outline btn-sm" style="margin-top:10px;align-self:flex-start;">Give to This Cause</a>
-        </div>
+        <div class="cause-media photo-tex ph-a"><span class="cause-pill">Health</span></div>
+        <h5>Emergency Medical Aid</h5>
+        <p>Mobile clinics and medicine supplies reaching families who have no nearby hospital or health post.</p>
+        <div class="cause-pct">74%</div>
+        <div class="cause-bar"><span style="width:74%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$44,400</strong></span><span>Goal: <strong>$60,000</strong></span></div>
+        <a href="donate.html" class="txt-link">Donate Now</a>
       </article>
       <article class="cause-card">
-        <div class="cause-media ph-6 ph-pattern"><span class="cause-tag">Empowerment</span></div>
-        <div class="cause-body">
-          <h5>Women's Economic Empowerment</h5>
-          <p>Small-business grants and skills training so mothers can rebuild stable income for their households.</p>
-          <div class="progress-bar"><span style="width:38%"></span></div>
-          <div class="progress-meta"><span><strong>$11,400</strong> raised</span><span>of $30,000</span></div>
-          <a href="donate.html" class="btn btn-outline btn-sm" style="margin-top:10px;align-self:flex-start;">Give to This Cause</a>
-        </div>
+        <div class="cause-media photo-tex ph-f"><span class="cause-pill">Empowerment</span></div>
+        <h5>Women's Economic Empowerment</h5>
+        <p>Small-business grants and skills training so mothers can rebuild stable income for their households.</p>
+        <div class="cause-pct">38%</div>
+        <div class="cause-bar"><span style="width:38%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$11,400</strong></span><span>Goal: <strong>$30,000</strong></span></div>
+        <a href="donate.html" class="txt-link">Donate Now</a>
       </article>
       <article class="cause-card">
-        <div class="cause-media ph-4 ph-pattern"><span class="cause-tag">Shelter</span></div>
-        <div class="cause-body">
-          <h5>Refugee &amp; IDP Support</h5>
-          <p>Shelter kits, blankets, and non-food items for families newly displaced by conflict or climate shocks.</p>
-          <div class="progress-bar"><span style="width:58%"></span></div>
-          <div class="progress-meta"><span><strong>$34,800</strong> raised</span><span>of $60,000</span></div>
-          <a href="donate.html" class="btn btn-outline btn-sm" style="margin-top:10px;align-self:flex-start;">Give to This Cause</a>
-        </div>
+        <div class="cause-media photo-tex ph-d"><span class="cause-pill">Shelter</span></div>
+        <h5>Refugee &amp; IDP Support</h5>
+        <p>Shelter kits, blankets, and non-food items for families newly displaced by conflict or climate shocks.</p>
+        <div class="cause-pct">58%</div>
+        <div class="cause-bar"><span style="width:58%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$34,800</strong></span><span>Goal: <strong>$60,000</strong></span></div>
+        <a href="donate.html" class="txt-link">Donate Now</a>
       </article>
     </div>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container">
-    <h2>Don't see the right fit?</h2>
-    <p>Give to our general relief fund and we'll direct it to the program with the most urgent need.</p>
-    <a href="donate.html" class="btn btn-primary">Donate to General Fund</a>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M24 33c-6.5-4.4-11-8.6-11-13.3A6 6 0 0124 16.4 6 6 0 0135 19.7c0 4.7-4.5 8.9-11 13.3z" fill="currentColor"/></svg>
+      <strong>Hiil iyo Hoo</strong>
+    </div>
     <div class="footer-top">
       <div class="footer-col">
-        <div class="footer-logo">Hiil<span>iyo</span>Hoo</div>
-        <p>Support and provision, together. Hiil iyo Hoo stands beside Somali families with both solidarity and material aid, at home and across the diaspora.</p>
-      </div>
-      <div class="footer-col">
         <h4>Our Info</h4>
-        <div class="row"><span class="ico">☎</span><a href="tel:+252615550199">+252 61 555 0199</a></div>
-        <div class="row"><span class="ico">☎</span><a href="tel:+16125550142">+1 (612) 555-0142</a></div>
-        <div class="row"><span class="ico">✉</span><a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a></div>
-        <div class="row"><span class="ico">⚲</span><span>Mogadishu, Somalia</span></div>
+        <div><a href="tel:+252615550199">+252 61 555 0199</a></div>
+        <div><a href="tel:+16125550142">+1 (612) 555-0142</a></div>
+        <div><a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a></div>
+        <div>Wadada Taleex,<br>Mogadishu, Somalia</div>
       </div>
       <div class="footer-col">
         <h4>Latest News</h4>
-        <div class="footer-news-item"><div class="meta">Oct 2026 · Relief</div><h6>Food convoy reaches 1,200 households in Baidoa</h6></div>
-        <div class="footer-news-item"><div class="meta">Sep 2026 · Water</div><h6>Borehole rehabilitation completed in Afgooye</h6></div>
-        <div class="footer-news-item"><div class="meta">Sep 2026 · Diaspora</div><h6>Minneapolis ururin raises $42,000</h6></div>
+        <div class="footer-news-item"><div class="meta">Oct 12, 2026 / <a href="programs.html">Relief</a></div><h6>Food Convoy Reaches Baidoa</h6></div>
+        <div class="footer-news-item"><div class="meta">Sep 14, 2026 / <a href="programs.html">Water</a></div><h6>Afgooye Well Back In Service</h6></div>
+        <div class="footer-news-item"><div class="meta">Aug 30, 2026 / <a href="programs.html">Diaspora</a></div><h6>Minneapolis Ururin Raises $42,000</h6></div>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
-        <div class="row"><a href="about.html">About Us</a></div>
-        <div class="row"><a href="programs.html">Our Programs</a></div>
-        <div class="row"><a href="events.html">Events</a></div>
-        <div class="row"><a href="donate.html">Donate</a></div>
-        <div class="row"><a href="contact.html">Contact</a></div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Hiil iyo Hoo. All rights reserved.</span>
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Twitter / X">X</a>
-        <a href="#" aria-label="Instagram">IG</a>
+        <h4>About Us</h4>
+        <p>Change a life with one gift. Hiil iyo Hoo is always here for Somali families who need both support and provision.</p>
+        <p>© 2026 Hiil iyo Hoo.</p>
       </div>
     </div>
   </div>
 </footer>
+
+<div class="offcanvas-overlay" data-offcanvas-close></div>
+<aside class="offcanvas-panel">
+  <button class="offcanvas-close" data-offcanvas-close>&#10005; Close</button>
+  <h3>Hello!</h3>
+  <p>Hiil iyo Hoo stands beside Somali families with both solidarity and material aid, at home and across the diaspora.</p>
+  <h4>Our Info</h4>
+  <p>+252 61 555 0199<br>info@hiiliyohoo.org<br>Mogadishu, Somalia</p>
+  <h4>Follow Us</h4>
+  <div class="offcanvas-social">
+    <a href="#" class="txt-link">FB</a><a href="#" class="txt-link">X</a><a href="#" class="txt-link">IG</a>
+  </div>
+</aside>
 
 <script src="assets/js/main.js"></script>
 </body>

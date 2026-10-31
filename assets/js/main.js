@@ -5,20 +5,50 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".main-nav");
   if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("nav-open");
-    });
+    toggle.addEventListener("click", () => nav.classList.toggle("nav-open"));
   }
 
-  // Sticky header shadow on scroll
-  const header = document.querySelector(".site-header");
-  if (header) {
-    window.addEventListener("scroll", () => {
-      header.classList.toggle("is-scrolled", window.scrollY > 10);
-    });
-  }
+  // Off-canvas panel
+  const ocOpenBtns = document.querySelectorAll("[data-offcanvas-open]");
+  const ocCloseBtns = document.querySelectorAll("[data-offcanvas-close]");
+  const ocPanel = document.querySelector(".offcanvas-panel");
+  const ocOverlay = document.querySelector(".offcanvas-overlay");
+  const openOc = () => { ocPanel?.classList.add("is-open"); ocOverlay?.classList.add("is-open"); };
+  const closeOc = () => { ocPanel?.classList.remove("is-open"); ocOverlay?.classList.remove("is-open"); };
+  ocOpenBtns.forEach((b) => b.addEventListener("click", openOc));
+  ocCloseBtns.forEach((b) => b.addEventListener("click", closeOc));
+  ocOverlay?.addEventListener("click", closeOc);
 
-  // Animated counters (triggered once visible)
+  // Generic fade/tab slider: container with [data-slider], slides [data-slide], triggers [data-slide-to]
+  document.querySelectorAll("[data-slider]").forEach((root) => {
+    const slides = root.querySelectorAll("[data-slide]");
+    const dots = root.querySelectorAll("[data-slide-to]");
+    let i = 0;
+    const show = (idx) => {
+      slides.forEach((s, n) => s.classList.toggle("is-active", n === idx));
+      dots.forEach((d, n) => d.classList.toggle("is-active", n === idx));
+      i = idx;
+    };
+    dots.forEach((d, n) => d.addEventListener("click", () => show(n)));
+    const auto = root.dataset.autoplay;
+    if (auto) {
+      setInterval(() => show((i + 1) % slides.length), parseInt(auto, 10));
+    }
+    show(0);
+  });
+
+  // Hero prev/next tabs
+  document.querySelectorAll("[data-hero]").forEach((root) => {
+    const slides = root.querySelectorAll("[data-hero-slide]");
+    let i = 0;
+    const show = (idx) => slides.forEach((s, n) => s.classList.toggle("is-active", n === idx));
+    root.querySelectorAll("[data-hero-next]").forEach((b) => b.addEventListener("click", () => { i = (i + 1) % slides.length; show(i); }));
+    root.querySelectorAll("[data-hero-prev]").forEach((b) => b.addEventListener("click", () => { i = (i - 1 + slides.length) % slides.length; show(i); }));
+    setInterval(() => { i = (i + 1) % slides.length; show(i); }, 6500);
+    show(0);
+  });
+
+  // Animated counters
   const counters = document.querySelectorAll("[data-count]");
   if (counters.length) {
     const animate = (el) => {
@@ -48,9 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const chips = document.querySelectorAll(".amount-chip[data-amount]");
   const totalEl = document.querySelector("[data-donate-total]");
   const customInput = document.querySelector("[data-custom-amount]");
-  const setTotal = (val) => {
-    if (totalEl) totalEl.textContent = "$" + Number(val || 0).toLocaleString();
-  };
+  const setTotal = (val) => { if (totalEl) totalEl.textContent = "$" + Number(val || 0).toLocaleString(); };
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       chips.forEach((c) => c.classList.remove("selected"));

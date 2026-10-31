@@ -7,7 +7,8 @@
 <meta name="description" content="Hiil iyo Hoo is a Somali community nonprofit providing emergency relief, clean water, education, and economic empowerment — standing by families with both support (hiil) and provision (hoo).">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@300;400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
 <div class="topbar">
   <div class="container">
     <div class="topbar-contacts">
-      <a href="tel:+16125550142">+1 (612) 555-0142</a>
+      <a href="tel:+252615550199">+252 61 555 0199</a>
       <a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a>
       <span>Mogadishu, Somalia · Minneapolis, USA</span>
     </div>
@@ -29,352 +30,364 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo">Hiil<span>iyo</span>Hoo<small>Support &amp; Provision</small></a>
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M24 33c-6.5-4.4-11-8.6-11-13.3A6 6 0 0124 16.4 6 6 0 0135 19.7c0 4.7-4.5 8.9-11 13.3z" fill="currentColor"/></svg>
+      <span class="logo-words"><strong>Hiil Iyo</strong>Hoo</span>
+    </a>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Our Programs</a></li>
+        <li><a href="about.html">Our Work</a></li>
+        <li><a href="programs.html">Donations</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="header-cta">
-        <a href="donate.html" class="btn btn-primary btn-sm">Donate Now</a>
+      <div class="header-icons">
+        <a href="donate.html" class="txt-link">Donate Now</a>
+        <button class="icon-dots" data-offcanvas-open aria-label="Open menu"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></button>
       </div>
     </nav>
     <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-content">
-    <div class="eyebrow">Hiil iyo Hoo · Support and Provision</div>
-    <h1>Standing by Somali families with both backing and bread.</h1>
-    <p class="lead">Hiil iyo Hoo unites moral solidarity and material aid — defending the vulnerable and delivering the food, water, and resources that let families stay whole through crisis.</p>
-    <div class="hero-actions">
-      <a href="donate.html" class="btn btn-primary">Donate Now</a>
-      <a href="programs.html" class="btn btn-light">View Our Work</a>
+<section class="hero-slider" data-hero>
+  <div class="hero-slide is-active" data-hero-slide>
+    <div class="photo-tex ph-b" style="position:absolute;inset:0;"></div>
+    <div class="hero-logo-content">
+      <svg class="hero-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="white" stroke-width="2"/><path d="M24 33c-6.5-4.4-11-8.6-11-13.3A6 6 0 0124 16.4 6 6 0 0135 19.7c0 4.7-4.5 8.9-11 13.3z" fill="white"/></svg>
+      <div class="hero-script">Hiil iyo hoo...</div>
     </div>
-    <div class="hero-stats">
-      <div><strong data-count="18400">0</strong><span>Families Reached</span></div>
-      <div><strong data-count="62">0</strong><span>Communities Served</span></div>
-      <div><strong data-count="340">0</strong><span>Active Volunteers</span></div>
+  </div>
+  <div class="hero-slide" data-hero-slide>
+    <div class="photo-tex ph-e" style="position:absolute;inset:0;"></div>
+    <div class="hero-caption">
+      <h1>A brighter future, built together.</h1>
+      <p style="color:#f3e9e3;">Join our cause and help us carry both halves of our promise — hiil and hoo — to families who need it most.</p>
+      <div class="hero-actions">
+        <a href="donate.html" class="txt-link txt-link--white txt-link--lg">Donate Now</a>
+        <a href="about.html" class="txt-link txt-link--white txt-link--lg">View More</a>
+      </div>
     </div>
+  </div>
+  <div class="hero-tabs">
+    <button data-hero-prev>Prev</button>
+    <button data-hero-next>Next</button>
   </div>
 </section>
 
 <div class="marquee-band">
   <a href="donate.html">
     <div class="marquee-track">
-      <span>Donate Hiil</span><span>Provide Hoo</span><span>Donate Hiil</span><span>Provide Hoo</span><span>Donate Hiil</span><span>Provide Hoo</span><span>Donate Hiil</span><span>Provide Hoo</span>
+      <span>Donate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Donate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Donate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Donate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Donate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Donate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
     </div>
   </a>
 </div>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">What We Do</div>
-      <h2>Two halves of one promise</h2>
-      <p>Every response we run carries both pieces of our name: the hiil of standing beside a family, and the hoo of putting real resources in their hands.</p>
+<div class="content-slider" data-slider data-autoplay="7000">
+  <div class="cs-slide" data-slide>
+    <div class="cs-photo photo-tex ph-a">
+      <div class="cs-dots">
+        <button data-slide-to>01</button><button data-slide-to>02</button><button data-slide-to>03</button>
+      </div>
     </div>
-    <div class="impact-grid">
-      <div class="impact-card">
-        <div class="num">01 · Hiil</div>
-        <h3>Ending hunger, together</h3>
-        <p>When drought and displacement empty a family's stores, our rapid-response teams deliver food baskets and advocate for longer-term food security.</p>
-        <div class="impact-counters">
-          <div><strong data-count="9200">0</strong><span>Meals Delivered /mo</span></div>
-          <div><strong data-count="54">0</strong><span>Partner Groups</span></div>
-        </div>
-      </div>
-      <div class="impact-card">
-        <div class="num">02 · Hoo</div>
-        <h3>Clean water for every home</h3>
-        <p>We rehabilitate wells and boreholes and run hygiene education so that water-borne illness stops costing families their children.</p>
-        <div class="impact-counters">
-          <div><strong data-count="41">0</strong><span>Wells Rehabilitated</span></div>
-          <div><strong data-count="26000">0</strong><span>People With Access</span></div>
-        </div>
-      </div>
-      <div class="impact-card">
-        <div class="num">03 · Hiil</div>
-        <h3>Education for every child</h3>
-        <p>Displacement should not end a child's schooling. We fund tuition, supplies, and temporary learning spaces in IDP settlements.</p>
-        <div class="impact-counters">
-          <div><strong data-count="1860">0</strong><span>Children Enrolled</span></div>
-          <div><strong data-count="38">0</strong><span>Learning Spaces</span></div>
-        </div>
+    <div class="cs-text">
+      <h2>Help stop<br>a hungry season</h2>
+      <p>When failed rains empty a family's stores, our rapid-response teams deliver food baskets within days — not weeks.</p>
+      <div class="cs-counters">
+        <div><strong data-count="9200">0</strong><span>Meals delivered this month</span></div>
+        <div><strong data-count="54">0</strong><span>Partner groups on the ground</span></div>
       </div>
     </div>
   </div>
-</section>
-
-<section class="section section--sand">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Where Your Gift Goes</div>
-      <h2>Current causes</h2>
-      <p>Every program below is active in the field right now. Choose a cause close to your heart, or give to our general relief fund.</p>
+  <div class="cs-slide" data-slide>
+    <div class="cs-photo photo-tex ph-g">
+      <div class="cs-dots">
+        <button data-slide-to>01</button><button data-slide-to>02</button><button data-slide-to>03</button>
+      </div>
     </div>
-    <div class="cause-grid">
-      <article class="cause-card">
-        <div class="cause-media ph-1 ph-pattern"><span class="cause-tag">Emergency Relief</span></div>
-        <div class="cause-body">
-          <h5>Drought &amp; Famine Relief</h5>
-          <p>Emergency food baskets and cash assistance for families facing failed harvests across the Shabelle and Juba regions.</p>
-          <div class="progress-bar"><span style="width:68%"></span></div>
-          <div class="progress-meta"><span><strong>$61,200</strong> raised</span><span>of $90,000</span></div>
-        </div>
-      </article>
-      <article class="cause-card">
-        <div class="cause-media ph-2 ph-pattern"><span class="cause-tag">Water &amp; Health</span></div>
-        <div class="cause-body">
-          <h5>Clean Water &amp; Sanitation</h5>
-          <p>Rehabilitating community wells and distributing water filters to reduce cholera and diarrheal disease outbreaks.</p>
-          <div class="progress-bar"><span style="width:45%"></span></div>
-          <div class="progress-meta"><span><strong>$27,500</strong> raised</span><span>of $60,000</span></div>
-        </div>
-      </article>
-      <article class="cause-card">
-        <div class="cause-media ph-3 ph-pattern"><span class="cause-tag">Education</span></div>
-        <div class="cause-body">
-          <h5>Education for Displaced Children</h5>
-          <p>School fees, uniforms, and temporary classrooms for children living in IDP camps around Baidoa and Mogadishu.</p>
-          <div class="progress-bar"><span style="width:52%"></span></div>
-          <div class="progress-meta"><span><strong>$20,800</strong> raised</span><span>of $40,000</span></div>
-        </div>
-      </article>
-      <article class="cause-card">
-        <div class="cause-media ph-5 ph-pattern"><span class="cause-tag">Health</span></div>
-        <div class="cause-body">
-          <h5>Emergency Medical Aid</h5>
-          <p>Mobile clinics and medicine supplies reaching families who have no nearby hospital or health post.</p>
-          <div class="progress-bar"><span style="width:74%"></span></div>
-          <div class="progress-meta"><span><strong>$44,400</strong> raised</span><span>of $60,000</span></div>
-        </div>
-      </article>
-      <article class="cause-card">
-        <div class="cause-media ph-6 ph-pattern"><span class="cause-tag">Empowerment</span></div>
-        <div class="cause-body">
-          <h5>Women's Economic Empowerment</h5>
-          <p>Small-business grants and skills training so mothers can rebuild stable income for their households.</p>
-          <div class="progress-bar"><span style="width:38%"></span></div>
-          <div class="progress-meta"><span><strong>$11,400</strong> raised</span><span>of $30,000</span></div>
-        </div>
-      </article>
-      <article class="cause-card">
-        <div class="cause-media ph-4 ph-pattern"><span class="cause-tag">Shelter</span></div>
-        <div class="cause-body">
-          <h5>Refugee &amp; IDP Support</h5>
-          <p>Shelter kits, blankets, and non-food items for families newly displaced by conflict or climate shocks.</p>
-          <div class="progress-bar"><span style="width:58%"></span></div>
-          <div class="progress-meta"><span><strong>$34,800</strong> raised</span><span>of $60,000</span></div>
-        </div>
-      </article>
-    </div>
-    <div style="text-align:center;margin-top:40px;">
-      <a href="programs.html" class="btn btn-outline">See All Programs</a>
+    <div class="cs-text">
+      <h2>For a cleaner<br>water supply</h2>
+      <p>We rehabilitate wells and boreholes and run hygiene education so water-borne illness stops costing families their children.</p>
+      <div class="cs-counters">
+        <div><strong data-count="41">0</strong><span>Wells rehabilitated</span></div>
+        <div><strong data-count="26000">0</strong><span>People with clean access</span></div>
+      </div>
     </div>
   </div>
-</section>
+  <div class="cs-slide" data-slide>
+    <div class="cs-photo photo-tex ph-h">
+      <div class="cs-dots">
+        <button data-slide-to>01</button><button data-slide-to>02</button><button data-slide-to>03</button>
+      </div>
+    </div>
+    <div class="cs-text">
+      <h2>Help children<br>stay in school</h2>
+      <p>Displacement shouldn't end a child's education. We fund tuition, supplies, and temporary classrooms in IDP settlements.</p>
+      <div class="cs-counters">
+        <div><strong data-count="1860">0</strong><span>Children enrolled</span></div>
+        <div><strong data-count="38">0</strong><span>Learning spaces built</span></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="section">
   <div class="container">
-    <div class="feature-split">
-      <div class="feature-media">
-        <div class="tile ph-2 ph-pattern"></div>
-        <div class="tile ph-1 ph-pattern"></div>
-        <div class="tile ph-6 ph-pattern"></div>
+    <div class="causes-grid">
+      <article class="cause-card">
+        <div class="cause-media photo-tex ph-e"><span class="cause-pill">Emergency Relief</span></div>
+        <h5>Drought &amp; Famine Relief</h5>
+        <p>Emergency food baskets and cash assistance for families facing failed harvests across the Shabelle and Juba regions.</p>
+        <div class="cause-pct">68%</div>
+        <div class="cause-bar"><span style="width:68%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$61,200</strong></span><span>Goal: <strong>$90,000</strong></span></div>
+      </article>
+      <article class="cause-card">
+        <div class="cause-media photo-tex ph-g"><span class="cause-pill">Water &amp; Health</span></div>
+        <h5>Clean Water &amp; Sanitation</h5>
+        <p>Rehabilitating community wells and distributing water filters to reduce cholera and diarrheal disease outbreaks.</p>
+        <div class="cause-pct">45%</div>
+        <div class="cause-bar"><span style="width:45%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$27,500</strong></span><span>Goal: <strong>$60,000</strong></span></div>
+      </article>
+      <article class="cause-card">
+        <div class="cause-media photo-tex ph-h"><span class="cause-pill">Education</span></div>
+        <h5>Education for Displaced Children</h5>
+        <p>School fees, uniforms, and temporary classrooms for children living in IDP camps around Baidoa and Mogadishu.</p>
+        <div class="cause-pct">52%</div>
+        <div class="cause-bar"><span style="width:52%"></span></div>
+        <div class="cause-meta"><span>Raised: <strong>$20,800</strong></span><span>Goal: <strong>$40,000</strong></span></div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:60px;"><a href="programs.html" class="txt-link txt-link--lg">See All Programs</a></div>
+  </div>
+</section>
+
+<div class="icon-row">
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 40C10 30 4 22 4 14.5 4 8.5 8.8 4 14.5 4 18.8 4 22 6.2 24 10 26 6.2 29.2 4 33.5 4 39.2 4 44 8.5 44 14.5 44 22 38 30 24 40z"/></svg>
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 4S10 22 10 31a14 14 0 0028 0C38 22 24 4 24 4z"/></svg>
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 26l6-14a3 3 0 015.6 2l-3 8M40 26l-6-14a3 3 0 00-5.6 2l3 8M14 22l3 14a4 4 0 004 3h6a4 4 0 004-3l3-14"/></svg>
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 10c-4-3-10-4-16-3v27c6-1 12 0 16 3 4-3 10-4 16-3V7c-6-1-12 0-16 3z"/><path d="M24 10v27"/></svg>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="savelives-grid">
+      <div class="savelives-images">
+        <div class="photo-tex ph-c"></div>
+        <div class="photo-tex ph-f"></div>
       </div>
-      <div>
-        <div class="eyebrow">Give With Confidence</div>
+      <div class="savelives-heading">
         <h2>You can<br>save a family.</h2>
-        <p>Hiil iyo Hoo channels every donation directly to vetted field partners in Somalia and the diaspora. We publish quarterly reports so you always know where your gift landed.</p>
-        <div class="feature-list">
-          <div>
-            <div class="ico">◎</div>
-            <div><h5>Shelter</h5><p>Emergency housing and NFI kits for displaced families.</p></div>
-          </div>
-          <div>
-            <div class="ico">◈</div>
-            <div><h5>Fundraising</h5><p>Community drives (ururin) that match diaspora giving to local need.</p></div>
-          </div>
-        </div>
-        <div style="margin-top:28px;"><a href="about.html" class="btn btn-primary">Learn Our Story</a></div>
+      </div>
+    </div>
+    <div class="kindness-block">
+      <div class="kindness-text">
+        <h2>Hiil iyo hoo<br>pass it on!</h2>
+        <p>One gift carries both halves of our promise — standing by a family, and putting resources in their hands.</p>
+        <a href="donate.html" class="txt-link">Donate Now</a>
+      </div>
+      <div class="kindness-photo photo-tex ph-d"></div>
+      <div class="kindness-form">
+        <h2>Join us<br>fill the form</h2>
+        <form data-netlify="true" name="volunteer" method="POST">
+          <input type="hidden" name="form-name" value="volunteer">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <button type="submit" class="txt-link">Subscribe</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
+<section class="newsletter-min">
   <div class="container">
-    <div class="eyebrow" style="justify-content:center;">Hiil Iyo Hoo</div>
-    <h2>Support and provision —<br>pass it on.</h2>
-    <p>One gift can carry both halves of our promise: standing by a family, and putting resources in their hands.</p>
-    <a href="donate.html" class="btn btn-primary">Donate Now</a>
-  </div>
-</section>
-
-<section class="newsletter">
-  <div class="container">
-    <h3>Join the Hiil iyo Hoo community</h3>
+    <h2>Subscribe to newsletter</h2>
     <form data-netlify="true" name="newsletter" method="POST">
       <input type="hidden" name="form-name" value="newsletter">
-      <input type="email" name="email" placeholder="Your email address" required>
+      <input type="email" name="email" placeholder="E-mail" required>
       <button type="submit">Subscribe</button>
     </form>
   </div>
 </section>
 
-<section class="section">
+<section class="section section--soft">
   <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Latest Updates</div>
-      <h2>Stories from the field</h2>
-    </div>
-    <div class="news-grid">
-      <article class="news-card">
-        <div class="news-media ph-1 ph-pattern"></div>
-        <div class="news-body">
-          <div class="news-meta">Relief · Oct 2026</div>
+    <h2 class="lavender-heading" style="font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:60px;">Join Our Cause</h2>
+    <div class="blog-masonry">
+      <div class="bm-col">
+        <div class="bm-card">
+          <div class="bm-meta">Oct 12, 2026 / <a href="programs.html">Relief</a></div>
           <h5>Food convoy reaches 1,200 households in Baidoa after road access reopens</h5>
+          <div class="bm-author">- Fadumo Hassan</div>
+          <div class="bm-quote">&rdquo;</div>
         </div>
-      </article>
-      <article class="news-card">
-        <div class="news-media ph-2 ph-pattern"></div>
-        <div class="news-body">
-          <div class="news-meta">Water · Sep 2026</div>
-          <h5>Rehabilitated borehole brings clean water back to Afgooye corridor families</h5>
+        <div class="bm-card has-photo">
+          <div class="bm-photo photo-tex ph-f"></div>
         </div>
-      </article>
-      <article class="news-card">
-        <div class="news-media ph-5 ph-pattern"></div>
-        <div class="news-body">
-          <div class="news-meta">Diaspora · Sep 2026</div>
+      </div>
+      <div class="bm-col">
+        <div class="bm-card has-photo">
+          <div class="bm-photo photo-tex ph-a"></div>
+        </div>
+        <div class="bm-card">
+          <div class="bm-meta">Sep 28, 2026 / <a href="programs.html">Diaspora</a></div>
+          <h5>Even the smallest gift can carry both hiil and hoo. A little means a lot.</h5>
+        </div>
+        <div class="bm-card accent">
+          <div class="bm-meta">Sep 14, 2026 / <a href="programs.html">Water</a></div>
+          <h5>Rehabilitated borehole brings clean water back to the Afgooye corridor.</h5>
+        </div>
+      </div>
+      <div class="bm-col">
+        <div class="bm-card">
+          <div class="bm-meta">Sep 9, 2026 / <a href="programs.html">Education</a></div>
+          <h5>School supplies reach 600 children displaced by drought near Baidoa</h5>
+          <div class="bm-author">- Fadumo Hassan</div>
+          <div class="bm-quote">&rdquo;</div>
+        </div>
+        <div class="bm-card">
+          <div class="bm-meta">Aug 30, 2026 / <a href="programs.html">Diaspora</a></div>
           <h5>Minneapolis community ururin raises $42,000 in a single weekend</h5>
         </div>
-      </article>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section section--dark">
-  <div class="container">
-    <div class="video-block">
-      <div class="play-btn">▶</div>
-    </div>
-    <p style="text-align:center;margin-top:20px;color:#cfe3d7;">Watch: a day with our mobile relief team in Lower Shabelle</p>
+<section class="video-min">
+  <div class="container" style="text-align:center;">
+    <button class="play-circle" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+    <p style="margin-top:24px;color:#6c6c6c;">Watch: a day with our mobile relief team in Lower Shabelle</p>
   </div>
 </section>
 
-<section class="section section--sand">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Voices</div>
-      <h2>What our community says</h2>
-    </div>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <div class="quote-mark">"</div>
-        <h3>When the well in our village ran dry, Hiil iyo Hoo didn't just send water — they sent people who stayed until it was fixed for good.</h3>
-        <div class="testimonial-person">
-          <div class="avatar"></div>
-          <div><h5>Amina Warsame</h5><span>Community Elder, Afgooye</span></div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="quote-mark">"</div>
-        <h3>I give monthly from Minneapolis because I know exactly which family my hoo reaches. That accountability is rare.</h3>
-        <div class="testimonial-person">
-          <div class="avatar"></div>
-          <div><h5>Yusuf Ali</h5><span>Monthly Donor, Minnesota</span></div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="quote-mark">"</div>
-        <h3>As a volunteer nurse on the mobile clinic, I've watched this organization keep its word to families twice over — hiil and hoo both.</h3>
-        <div class="testimonial-person">
-          <div class="avatar"></div>
-          <div><h5>Nurse Hodan Mohamed</h5><span>Volunteer, Mobile Health Unit</span></div>
-        </div>
-      </div>
+<div class="testimonial-wrap" data-slider data-autoplay="8000">
+  <div class="ts-slide" data-slide>
+    <div class="ts-photo photo-tex ph-f"></div>
+    <div class="ts-text">
+      <div class="quote-mark">&rdquo;</div>
+      <h3>When the well in our village ran dry, Hiil iyo Hoo sent people who stayed until it was fixed for good.</h3>
+      <div class="ts-role">Community Elder</div>
+      <div class="ts-name">Amina Warsame</div>
+      <div class="ts-dots"><button data-slide-to>01</button><button data-slide-to>02</button><button data-slide-to>03</button></div>
     </div>
   </div>
-</section>
+  <div class="ts-slide" data-slide>
+    <div class="ts-photo photo-tex ph-e"></div>
+    <div class="ts-text">
+      <div class="quote-mark">&rdquo;</div>
+      <h3>I give monthly from Minneapolis because I know exactly which family my hoo reaches. That accountability is rare.</h3>
+      <div class="ts-role">Monthly Donor</div>
+      <div class="ts-name">Yusuf Ali</div>
+      <div class="ts-dots"><button data-slide-to>01</button><button data-slide-to>02</button><button data-slide-to>03</button></div>
+    </div>
+  </div>
+  <div class="ts-slide" data-slide>
+    <div class="ts-photo photo-tex ph-c"></div>
+    <div class="ts-text">
+      <div class="quote-mark">&rdquo;</div>
+      <h3>As a volunteer nurse on the mobile clinic, I've watched this organization keep its word twice over — hiil and hoo both.</h3>
+      <div class="ts-role">Volunteer, Mobile Health Unit</div>
+      <div class="ts-name">Hodan Mohamed</div>
+      <div class="ts-dots"><button data-slide-to>01</button><button data-slide-to>02</button><button data-slide-to>03</button></div>
+    </div>
+  </div>
+</div>
 
 <section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Reach Us</div>
-      <h2>Our contact info</h2>
-      <p>Whether you want to volunteer, partner, or ask where your donation goes — our teams in Somalia and the diaspora are ready to answer.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="office-card">
-        <h4>Mogadishu Office</h4>
-        <div class="row"><span class="ico">☎</span><span>+252 61 555 0199</span></div>
-        <div class="row"><span class="ico">✉</span><span>mogadishu@hiiliyohoo.org</span></div>
-        <div class="row"><span class="ico">⚲</span><span>Wadada Taleex, Mogadishu, Somalia</span></div>
+  <div class="container contact-wrap">
+    <div>
+      <div class="section-head">
+        <h2 class="lavender-heading" style="font-size:clamp(2.6rem,5vw,4rem);">Our Contact Info</h2>
+        <p>Whether you want to volunteer, partner, or ask where your donation goes — our teams in Somalia and the diaspora are ready to answer.</p>
       </div>
-      <div class="office-card">
-        <h4>Minneapolis Office</h4>
-        <div class="row"><span class="ico">☎</span><span>+1 (612) 555-0142</span></div>
-        <div class="row"><span class="ico">✉</span><span>usa@hiiliyohoo.org</span></div>
-        <div class="row"><span class="ico">⚲</span><span>2100 Riverside Ave, Minneapolis, MN, USA</span></div>
+      <div class="offices">
+        <div class="office">
+          <h4>Mogadishu</h4>
+          <p>+252 61 555 0199</p>
+          <p>mogadishu@hiiliyohoo.org</p>
+          <p>Wadada Taleex,<br>Mogadishu, Somalia</p>
+        </div>
+        <div class="office">
+          <h4>Minneapolis</h4>
+          <p>+1 (612) 555-0142</p>
+          <p>usa@hiiliyohoo.org</p>
+          <p>2100 Riverside Ave,<br>Minneapolis, USA</p>
+        </div>
       </div>
     </div>
-    <div style="text-align:center;margin-top:10px;"><a href="contact.html" class="btn btn-outline">Go to Full Contact Page</a></div>
+    <form class="contact-form" data-netlify="true" name="contact-home" method="POST">
+      <input type="hidden" name="form-name" value="contact-home">
+      <div class="field"><label for="hname">Name</label><input id="hname" type="text" name="name"></div>
+      <div class="field"><label for="hemail">E-mail</label><input id="hemail" type="email" name="email"></div>
+      <div class="field"><label for="hmessage">Message</label><textarea id="hmessage" name="message" rows="4"></textarea></div>
+      <button type="submit" class="txt-link">Submit</button>
+    </form>
   </div>
 </section>
 
 <div class="marquee-band">
   <a href="about.html">
     <div class="marquee-track">
-      <span>Become a Volunteer</span><span>Join Our Cause</span><span>Become a Volunteer</span><span>Join Our Cause</span><span>Become a Volunteer</span><span>Join Our Cause</span><span>Become a Volunteer</span><span>Join Our Cause</span>
+      <span>Volunteer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Volunteer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Volunteer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Volunteer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Volunteer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <span>Volunteer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
     </div>
   </a>
 </div>
 
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M24 33c-6.5-4.4-11-8.6-11-13.3A6 6 0 0124 16.4 6 6 0 0135 19.7c0 4.7-4.5 8.9-11 13.3z" fill="currentColor"/></svg>
+      <strong>Hiil iyo Hoo</strong>
+    </div>
     <div class="footer-top">
       <div class="footer-col">
-        <div class="footer-logo">Hiil<span>iyo</span>Hoo</div>
-        <p>Support and provision, together. Hiil iyo Hoo stands beside Somali families with both solidarity and material aid, at home and across the diaspora.</p>
-      </div>
-      <div class="footer-col">
         <h4>Our Info</h4>
-        <div class="row"><span class="ico">☎</span><a href="tel:+252615550199">+252 61 555 0199</a></div>
-        <div class="row"><span class="ico">☎</span><a href="tel:+16125550142">+1 (612) 555-0142</a></div>
-        <div class="row"><span class="ico">✉</span><a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a></div>
-        <div class="row"><span class="ico">⚲</span><span>Mogadishu, Somalia</span></div>
+        <div><a href="tel:+252615550199">+252 61 555 0199</a></div>
+        <div><a href="tel:+16125550142">+1 (612) 555-0142</a></div>
+        <div><a href="mailto:info@hiiliyohoo.org">info@hiiliyohoo.org</a></div>
+        <div>Wadada Taleex,<br>Mogadishu, Somalia</div>
       </div>
       <div class="footer-col">
         <h4>Latest News</h4>
-        <div class="footer-news-item"><div class="meta">Oct 2026 · Relief</div><h6>Food convoy reaches 1,200 households in Baidoa</h6></div>
-        <div class="footer-news-item"><div class="meta">Sep 2026 · Water</div><h6>Borehole rehabilitation completed in Afgooye</h6></div>
-        <div class="footer-news-item"><div class="meta">Sep 2026 · Diaspora</div><h6>Minneapolis ururin raises $42,000</h6></div>
+        <div class="footer-news-item"><div class="meta">Oct 12, 2026 / <a href="programs.html">Relief</a></div><h6>Food Convoy Reaches Baidoa</h6></div>
+        <div class="footer-news-item"><div class="meta">Sep 14, 2026 / <a href="programs.html">Water</a></div><h6>Afgooye Well Back In Service</h6></div>
+        <div class="footer-news-item"><div class="meta">Aug 30, 2026 / <a href="programs.html">Diaspora</a></div><h6>Minneapolis Ururin Raises $42,000</h6></div>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
-        <div class="row"><a href="about.html">About Us</a></div>
-        <div class="row"><a href="programs.html">Our Programs</a></div>
-        <div class="row"><a href="events.html">Events</a></div>
-        <div class="row"><a href="donate.html">Donate</a></div>
-        <div class="row"><a href="contact.html">Contact</a></div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Hiil iyo Hoo. All rights reserved.</span>
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Twitter / X">X</a>
-        <a href="#" aria-label="Instagram">IG</a>
+        <h4>About Us</h4>
+        <p>Change a life with one gift. Hiil iyo Hoo is always here for Somali families who need both support and provision.</p>
+        <p>© 2026 Hiil iyo Hoo.</p>
       </div>
     </div>
   </div>
 </footer>
+
+<div class="offcanvas-overlay" data-offcanvas-close></div>
+<aside class="offcanvas-panel">
+  <button class="offcanvas-close" data-offcanvas-close>&#10005; Close</button>
+  <h3>Hello!</h3>
+  <p>Hiil iyo Hoo stands beside Somali families with both solidarity and material aid, at home and across the diaspora.</p>
+  <h4>Our Info</h4>
+  <p>+252 61 555 0199<br>info@hiiliyohoo.org<br>Mogadishu, Somalia</p>
+  <h4>Follow Us</h4>
+  <div class="offcanvas-social">
+    <a href="#" class="txt-link">FB</a><a href="#" class="txt-link">X</a><a href="#" class="txt-link">IG</a>
+  </div>
+</aside>
 
 <script src="assets/js/main.js"></script>
 </body>
