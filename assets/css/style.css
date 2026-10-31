@@ -120,8 +120,8 @@ p { margin: 0 0 1em; }
 /* ===== Header ===== */
 .site-header { position: sticky; top: 0; z-index: 60; background: var(--white); }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 22px 40px; gap: 24px; }
-.logo { display: flex; align-items: center; gap: 12px; }
-.logo-mark { width: 40px; height: 40px; flex-shrink: 0; }
+.logo { display: flex; align-items: center; gap: 14px; }
+.logo-mark { height: 40px; width: auto; flex-shrink: 0; display: block; }
 .logo-words { font-family: var(--font-body); line-height: 1.2; font-size: 0.95rem; font-weight: 400; }
 .logo-words strong { display: block; font-size: 1.15rem; font-weight: 700; }
 .main-nav { display: flex; align-items: center; gap: 40px; }
@@ -325,9 +325,9 @@ p { margin: 0 0 1em; }
 
 /* ===== Footer ===== */
 .site-footer { background: var(--soft); padding-top: 90px; }
-.footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 60px; }
+.footer-logo { display: flex; align-items: center; gap: 14px; margin-bottom: 60px; }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 50px; padding-bottom: 60px; }
-.footer-logo .logo-mark { width: 34px; height: 34px; }
+.footer-logo .logo-mark { height: 34px; width: auto; }
 .footer-col h4 { font-family: var(--font-body); text-transform: none; font-weight: 700; font-size: 1.15rem; margin-bottom: 20px; }
 .footer-col p, .footer-col div { font-size: 0.95rem; color: #444; margin-bottom: 10px; }
 .footer-col a:hover { color: var(--coral-strong); }
@@ -461,4 +461,11 @@ p { margin: 0 0 1em; }
   .kindness-text, .kindness-form, .ts-text, .cs-text { padding: 40px 28px; }
   .page-hero h1 { font-size: 2.6rem; }
   .cause-pct { font-size: 2.4rem; }
+  .logo { gap: 8px; }
+  .logo-mark { height: 30px; }
+  .logo-words { font-size: 0.72rem; white-space: nowrap; }
+  .logo-words strong { font-size: 0.86rem; white-space: nowrap; }
+  .header-icons { gap: 10px; }
+  .header-icons .icon-dots { display: none; }
+  .header-icons .txt-link { font-size: 0.72rem; }
 }
