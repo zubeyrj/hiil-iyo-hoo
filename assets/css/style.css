@@ -426,6 +426,10 @@ p { margin: 0 0 1em; }
 .ph-g { background-image: linear-gradient(145deg, #c97a7a, #8a2f3a); }
 .ph-h { background-image: linear-gradient(145deg, #e2cdb0, #a9876a); }
 
+/* Real photography: no synthetic grain, just the photo */
+.photo-tex.is-real-photo::before { content: none; }
+.hero-photo-handwashing { background-image: url("../img/hero-handwashing.jpg"); }
+
 /* ===== Off-canvas panel ===== */
 .offcanvas-overlay {
   position: fixed; inset: 0; background: rgba(48,48,48,0.4); z-index: 200;
