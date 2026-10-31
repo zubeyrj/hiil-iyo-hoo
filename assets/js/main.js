@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const chips = document.querySelectorAll(".amount-chip[data-amount]");
   const totalEl = document.querySelector("[data-donate-total]");
   const customInput = document.querySelector("[data-custom-amount]");
-  const setTotal = (val) => { if (totalEl) totalEl.textContent = "$" + Number(val || 0).toLocaleString(); };
+  const setTotal = (val) => { if (totalEl) totalEl.textContent = "£" + Number(val || 0).toLocaleString(); };
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       chips.forEach((c) => c.classList.remove("selected"));
