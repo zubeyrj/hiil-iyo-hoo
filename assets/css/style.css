@@ -2,21 +2,24 @@
    Hiil iyo Hoo — stylesheet
    Structural/visual system modeled on the DoGood charity theme demo
    (dogood.qodeinteractive.com): Anton display type, Heebo body type,
-   lavender + coral accent duo, flat underline buttons, no card shadows.
+   flat underline buttons, no card shadows. Accent duo retuned from
+   DoGood's lavender+coral into the logo's maroon+terracotta-rose family
+   (--lavender/--coral custom-property names kept as-is to avoid touching
+   every rule that references them; only their values shifted).
    ========================================================================== */
 
 :root {
-  --ink: #303030;
+  --ink: #2c2422;
   --white: #ffffff;
-  --soft: #f6f6f6;
-  --soft-line: #e7e7e7;
-  --lavender: #9b8db7;
-  --lavender-soft: #f0e8f8;
-  --coral: #ff9370;
-  --coral-strong: #ff6f42;
-  --coral-soft: #ffe2da;
-  --coral-mid: #ffb9a3;
-  --icon-gray: #cfcfcf;
+  --soft: #f7f4f2;
+  --soft-line: #e8e0dd;
+  --lavender: #7a1f2b;
+  --lavender-soft: #f3e3e4;
+  --coral: #c2564a;
+  --coral-strong: #8f2233;
+  --coral-soft: #f5dcd4;
+  --coral-mid: #d98a7a;
+  --icon-gray: #cfc3c1;
 
   --font-display: "Anton", "Arial Narrow", sans-serif;
   --font-body: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -121,9 +124,20 @@ p { margin: 0 0 1em; }
 .site-header { position: sticky; top: 0; z-index: 60; background: var(--white); }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 22px 40px; gap: 24px; }
 .logo { display: flex; align-items: center; gap: 14px; }
-.logo-mark { height: 40px; width: auto; flex-shrink: 0; display: block; }
-.logo-words { font-family: var(--font-body); line-height: 1.2; font-size: 0.95rem; font-weight: 400; }
-.logo-words strong { display: block; font-size: 1.15rem; font-weight: 700; }
+.logo-mark { height: 42px; width: auto; flex-shrink: 0; display: block; }
+.logo-text { height: 30px; width: auto; flex-shrink: 0; display: block; }
+/* On a photo, the raster logo (fixed maroon/white) is recolored to a flat
+   white silhouette for legibility; once scrolled past the photo it reverts
+   to its real maroon/cream colors on the solid white bar. */
+.header-group.on-photo .logo-mark,
+.header-group.on-photo .logo-text {
+  filter: brightness(0) invert(1);
+  transition: filter .25s ease;
+}
+.header-group.on-photo.is-scrolled .logo-mark,
+.header-group.on-photo.is-scrolled .logo-text {
+  filter: none;
+}
 .main-nav { display: flex; align-items: center; gap: 40px; }
 .main-nav ul { display: flex; gap: 30px; }
 .main-nav a {
@@ -328,6 +342,7 @@ p { margin: 0 0 1em; }
 .footer-logo { display: flex; align-items: center; gap: 14px; margin-bottom: 60px; }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 50px; padding-bottom: 60px; }
 .footer-logo .logo-mark { height: 34px; width: auto; }
+.footer-logo .logo-text { height: 24px; width: auto; }
 .footer-col h4 { font-family: var(--font-body); text-transform: none; font-weight: 700; font-size: 1.15rem; margin-bottom: 20px; }
 .footer-col p, .footer-col div { font-size: 0.95rem; color: #444; margin-bottom: 10px; }
 .footer-col a:hover { color: var(--coral-strong); }
@@ -403,12 +418,12 @@ p { margin: 0 0 1em; }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
 }
 .ph-a { background-image: linear-gradient(145deg, #e8a687, #c9704f); }
-.ph-b { background-image: linear-gradient(145deg, #b7a6cf, #8a76ab); }
+.ph-b { background-image: linear-gradient(145deg, #a85d63, #6e2530); }
 .ph-c { background-image: linear-gradient(145deg, #e9c9a8, #c79b73); }
 .ph-d { background-image: linear-gradient(145deg, #6f6256, #352d27); }
 .ph-e { background-image: linear-gradient(145deg, #f0b79f, #d9774e); }
 .ph-f { background-image: linear-gradient(145deg, #a9b79a, #74836a); }
-.ph-g { background-image: linear-gradient(145deg, #cbb7e0, #9b85bd); }
+.ph-g { background-image: linear-gradient(145deg, #c97a7a, #8a2f3a); }
 .ph-h { background-image: linear-gradient(145deg, #e2cdb0, #a9876a); }
 
 /* ===== Off-canvas panel ===== */
@@ -462,9 +477,8 @@ p { margin: 0 0 1em; }
   .page-hero h1 { font-size: 2.6rem; }
   .cause-pct { font-size: 2.4rem; }
   .logo { gap: 8px; }
-  .logo-mark { height: 30px; }
-  .logo-words { font-size: 0.72rem; white-space: nowrap; }
-  .logo-words strong { font-size: 0.86rem; white-space: nowrap; }
+  .logo-mark { height: 28px; }
+  .logo-text { height: 20px; }
   .header-icons { gap: 10px; }
   .header-icons .icon-dots { display: none; }
   .header-icons .txt-link { font-size: 0.72rem; }
