@@ -428,7 +428,6 @@ p { margin: 0 0 1em; }
 
 /* Real photography: no synthetic grain, just the photo */
 .photo-tex.is-real-photo::before { content: none; }
-.hero-photo-handwashing { background-image: url("../img/hero-handwashing.jpg"); }
 
 /* ===== Off-canvas panel ===== */
 .offcanvas-overlay {
