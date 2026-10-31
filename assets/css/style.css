@@ -89,15 +89,33 @@ p { margin: 0 0 1em; }
 /* ===== Header group: on a photo, topbar + header sit transparently on the
    image with no solid background, like the reference (the "white" look
    there is a light scrim + a 1px white divider line, not an opaque bar) ===== */
-.header-group.on-photo { position: absolute; top: 0; left: 0; right: 0; z-index: 10; }
-.header-group.on-photo .topbar { border-bottom: 1px solid rgba(255,255,255,0.3); }
+.header-group.on-photo {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  transition: background-color .25s ease, box-shadow .25s ease;
+}
+.header-group.on-photo .topbar { border-bottom: 1px solid rgba(255,255,255,0.3); transition: border-color .25s ease; }
 .header-group.on-photo .topbar-contacts,
 .header-group.on-photo .topbar-contacts a,
-.header-group.on-photo .topbar-social a { color: var(--white); }
+.header-group.on-photo .topbar-social a { color: var(--white); transition: color .25s ease; }
 .header-group.on-photo .site-header { position: static; background: transparent; }
 .header-group.on-photo .main-nav a,
 .header-group.on-photo .logo,
-.header-group.on-photo .header-icons a { color: var(--white); }
+.header-group.on-photo .header-icons a { color: var(--white); transition: color .25s ease; }
+.header-group.on-photo .nav-toggle span { background: var(--white); transition: background-color .25s ease; }
+
+/* Scrolled state: solid white bar, dark text, pinned at top */
+.header-group.on-photo.is-scrolled {
+  background: var(--white);
+  box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+}
+.header-group.on-photo.is-scrolled .topbar { border-bottom-color: var(--soft-line); }
+.header-group.on-photo.is-scrolled .topbar-contacts,
+.header-group.on-photo.is-scrolled .topbar-contacts a,
+.header-group.on-photo.is-scrolled .topbar-social a { color: #555; }
+.header-group.on-photo.is-scrolled .main-nav a,
+.header-group.on-photo.is-scrolled .logo,
+.header-group.on-photo.is-scrolled .header-icons a { color: var(--ink); }
+.header-group.on-photo.is-scrolled .nav-toggle span { background: var(--ink); }
 
 /* ===== Header ===== */
 .site-header { position: sticky; top: 0; z-index: 60; background: var(--white); }

@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("click", () => nav.classList.toggle("nav-open"));
   }
 
+  // Header-on-photo: switch to a solid white, pinned bar once scrolled
+  const headerGroup = document.querySelector(".header-group.on-photo");
+  if (headerGroup) {
+    const toggleScrolled = () => headerGroup.classList.toggle("is-scrolled", window.scrollY > 40);
+    window.addEventListener("scroll", toggleScrolled, { passive: true });
+    toggleScrolled();
+  }
+
   // Off-canvas panel
   const ocOpenBtns = document.querySelectorAll("[data-offcanvas-open]");
   const ocCloseBtns = document.querySelectorAll("[data-offcanvas-close]");
