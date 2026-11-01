@@ -479,10 +479,12 @@ p { margin: 0 0 1em; }
   .kindness-text, .kindness-form, .ts-text, .cs-text { padding: 40px 28px; }
   .page-hero h1 { font-size: 2.6rem; }
   .cause-pct { font-size: 2.4rem; }
+  .topbar { display: none; }
   .logo { gap: 8px; }
-  .logo-mark { height: 28px; }
-  .logo-text { height: 20px; }
+  .logo-mark { height: 30px; }
+  .logo-text { display: none; }
   .header-icons { gap: 10px; }
   .header-icons .icon-dots { display: none; }
-  .header-icons .txt-link { font-size: 0.72rem; }
+  .header-icons .txt-link { display: none; }
+  .main-nav.nav-open .header-icons .txt-link { display: inline-block; font-size: 0.85rem; }
 }
